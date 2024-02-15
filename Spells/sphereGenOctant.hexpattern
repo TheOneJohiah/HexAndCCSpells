@@ -1,56 +1,54 @@
 //better sphereGen using octant coordinates and mirroring
 {
-    {
-        Numerical Reflection: 8
-        Gemini Gambit
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-        @vec(1,1,-1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-        @vec(1,-1,1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-        @vec(1,-1,-1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-        @vec(-1,1,1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a) //Bookkeepers v
-        @vec(-1,1,-1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-        @vec(-1,-1,1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-        @vec(-1,-1,-1)
-        Multiplicative Distillation
-        Consideration
-        Place Block
-        Athena's Gambit
-        @pattern(SOUTHEAST,a)
-    }
-    Scribe's Reflection //Read patterns from offhand
-    Thoth's Gambit //Thoth over the octant
+    @num(8) //8, duh
+    Gemini Gambit
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
+    @vec(1,1,-1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
+    @vec(1,-1,1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
+    @vec(1,-1,-1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
+    @vec(-1,1,1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a) //Bookkeepers v
+    @vec(-1,1,-1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
+    @vec(-1,-1,1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
+    @vec(-1,-1,-1)
+    Multiplicative Distillation
+    Consideration
+    Place Block
+    Athena's Gambit
+    @pattern(SOUTHEAST,a)
 }
+Scribe's Reflection //Read patterns from offhand
+Thoth's Gambit //Thoth over the octant
