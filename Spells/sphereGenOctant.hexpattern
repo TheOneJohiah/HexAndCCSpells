@@ -1,8 +1,12 @@
 //better sphereGen using octant coordinates and mirroring
 {
+    Muninn's Reflection
+    Subtractive Distillation //Get difference from center
     Consideration
     @num(8) //8, duh
-    Gemini Gambit
+    Gemini Gambit //Duplicate vector
+    Muninn's Reflection
+    Additive Distillation //Recreate original coord
     Consideration
     Place Block
     Athena's Gambit
@@ -10,6 +14,8 @@
     Consideration
     @vec(1,1,-1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
@@ -17,6 +23,8 @@
     Consideration
     @vec(1,-1,1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
@@ -24,6 +32,8 @@
     Consideration
     @vec(1,-1,-1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
@@ -31,6 +41,8 @@
     Consideration
     @vec(-1,1,1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
@@ -38,6 +50,8 @@
     Consideration
     @vec(-1,1,-1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
@@ -45,6 +59,8 @@
     Consideration
     @vec(-1,-1,1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
@@ -52,10 +68,20 @@
     Consideration
     @vec(-1,-1,-1)
     Multiplicative Distillation
+    Muninn's Reflection
+    Additive Distillation //Recreate reflected coord
     Consideration
     Place Block
     Athena's Gambit
     @pattern(SOUTHEAST,a)
 }
+Scribe's Reflection
+Consideration
+@num(0)
+Selection Distillation
+Huginn's Gambit //Write center coord to ravenmind
 Scribe's Reflection //Read patterns from offhand
+Consideration
+@num(1)
+Selection Distillation //get coordlist
 Thoth's Gambit //Thoth over the octant
