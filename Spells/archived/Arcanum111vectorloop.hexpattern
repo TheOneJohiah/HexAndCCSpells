@@ -1,0 +1,16 @@
+Spellbook page {
+  consideration,
+    [
+      (muninns, create 1, add, huginns, create 1, swap, duplicate top of stack, muninns, make 2, greater than check, pull result out of list, hermes),
+      (bookkeepers top iota, vector call, charon)
+    ],
+  make 0,
+  huginns,
+  duplicate top of stack,
+  make 0,
+  pull result out of list,
+  hermes
+}
+
+Caster:
+Scribe's gambit, hermes

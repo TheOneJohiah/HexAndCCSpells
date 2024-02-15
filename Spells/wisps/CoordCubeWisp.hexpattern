@@ -1,0 +1,51 @@
+//Waits for caster communication for start and end coordinates
+//Transforms coordinates into offset vector
+//Uses diagonal movement and greater sentinel for ambit
+//Upon completion moves back to caster
+//Scans for item frames, uploads coordinates into focus
+
+//Potential features: Break blocks of type/!type, log instances of type/!type
+//Light placement in air blocks of low brightness
+Consideration: 
+{
+    Muninn's Reflection //Ravenmind only empty on first run
+    Augur's Purification //False if empty, true otherwise
+    Consideration: 
+    {
+        Aergia's Gambit
+    }
+    Consideration: 
+    {
+        Type: "Item Frame"
+        Identity Reflection
+        Compass' Purification
+        Numerical Reflection: 10
+        Zone Exaltation: Type
+        Numerical Reflection: 0
+        Selection Distillation //Get the closest focus
+        Scribe's Reflection //Get start/end coords
+        Flock's Disintegration
+        Subtractive Distillation //Convert coordinates to an offset from start
+        Huginn's Gambit //Write to ravenmind
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+    
+
+
+    //Return to caster and write results
+    Consideration: 
+    {
+        Scribe's Gambit //Write coordinate results to all foci in range
+    }
+    Mind's Reflection
+    Compass' Purification
+    Pathfinder's Gambit
+    Wander //Pause casting while it moves to the caster
+
+    Identity Reflection
+    Compass' Purification
+    Numerical Reflection: 10
+    Zone Exaltation: Type
+    
+}

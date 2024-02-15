@@ -1,0 +1,41 @@
+//Casts from item frames or link
+//Eats slipway transfer wisps
+//Sends media transfer wisps on request
+//TODO: Verbal commands? Add via item frame?
+{
+    //Add things in item frame to stack/execute
+    {
+        Auditor's Purification
+        {
+            Chronicler's Purification
+            Hermes' Gambit //Execute pattern from item frame
+        }
+        {
+            Aergia's Gambit //Since we clear after thoths, just noop here
+        }
+        Augur's Exaltation
+        Hermes' Gambit //Either read from item frame, or don't
+    }
+    Type: "Glowing Item Frame"
+    Identity Reflection
+    Compass' Purification //Get location of wisp
+    Numerical Reflection: 8
+    Zone Exaltation: Type //Scan for item frames?
+    Thoth's Gambit //Run Chroniclers and Hermes on all item frames
+    //If we were to get rid of this we could have persistent stack
+    //for item frame spells between iterations
+    Bookkeeper's Gambit: v //Clear thoth list
+
+    //Add things from link to stack/execute
+    Postmaster's Reflection
+    Augur's Purification //is the queue anything other than 0?
+    {
+        Recitation Reflection //Read out from queue
+        Hermes' Gambit
+    }
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+}

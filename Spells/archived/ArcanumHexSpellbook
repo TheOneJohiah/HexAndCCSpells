@@ -1,0 +1,36 @@
+1: Throw self impulse 3
+2: Raycast explode strength 5
+3: Raycast single bonemeal
+4: Blink self impulse 25
+5: Break and place at daisy, uses hotbar blocks
+6: Catalyst swap
+7: Raycast entity and charge item in offhand
+8: Raycast entity and smelt
+
+9: For loop loop 1,1,1 generator
+
+10: Edify sapling
+11: Scan 5 block, item recharge
+12: Scan 5 block, smelt (Currently nonfunctional)
+
+32: Raycast to block
+33: Get block face offset
+34: Raycast to entity
+35: Null
+36: Null
+37: Null
+
+38: Add raycast block to list in stack
+39: Coordinates for pure daisy
+40: Coordinates for under mana pool
+41: Null
+42: Null
+
+
+58: Blue, Black, Green Zenith patterns (list)
+59: Flay Mind pattern
+60: Craft Phial pattern
+61: Greater Teleport pattern
+62: Summon Rain pattern
+63: Dispel Rain pattern
+64: Bind Wisp pattern

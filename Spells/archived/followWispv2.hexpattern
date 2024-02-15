@@ -1,0 +1,113 @@
+//Currently:
+//Constantly stays just behind caster;
+//No delay because it's noisy as hell
+//Will cast spells sent via link
+//Places light at caster's head if dark
+//Automatically links to slipway wisp if within 8 blocks
+//Todo: Autorelink to caster
+//Todo: Mishap handling
+//Todo: Messenger wisps via gate to bank wisp
+Consideration: 
+{
+    //Move to caster
+    Mind's Reflection
+    Compass' Purification II //get foot position
+    Vector Reflection +Y // Get 0,1,0 vector
+    Numerical Reflection: 2
+    Division Distillation //Make it a 0,0.5,0 vector
+    Additive Distillation //Add to get slightly below caster vision
+    Pathfinder's Gambit //Move there
+    
+    //Cast light spell at caster head if dark
+    // TODO: Check for water when casting light spell
+    // TODO: Make not place in air/at night? Some other parameter?
+    // TODO: Alternative: Just make it toggleable via string?
+    Mind's Reflection
+    Compass' Purification
+    Lamplighter's Purification
+    Numerical Reflection: 6
+    Minimus Distillation //True if light less than 6
+
+    Mind's Reflection
+    Compass' Purification
+    Identity Reflection
+    Compass' Purification
+    Subtractive Distillation
+    Length Purification
+    Numerical Reflection: 7
+    Minimus Distillation //True if closer than 7 blocks
+    Conjunction Distillation //True if both are true, otherwise false
+    Consideration: 
+    {
+        Mind's Reflection
+        Compass' Purification
+        Conjure Light
+    }
+    Consideration: 
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+
+    //Cast anything in queue
+    Postmaster's Reflection
+    Augur's Purification //is the queue anything other than 0?
+    Consideration: 
+    {
+        Mind's Reflection
+        Alidade's Purification
+        Numerical Reflection: 7
+        Multiplicative Distillation
+        Identity Reflection
+        Compass' Purification
+        Additive Distillation //Add wisp location with player look vector
+        Summon Greater Sentinel //Put sentinel at coord before casting
+
+        Recitation Reflection //Read out from queue
+        Hermes' Gambit //Execute whatever the caster sent, presumably a patternlist
+        Flock's Reflection //Get height of stack
+        Flock's Gambit //List anything in the stack together
+        Bookkeeper's Gambit: v //Clear out stack for next iteration
+    }
+    Consideration: 
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+    
+    //Autolink to slipway wisp if index 1 is null and within 8 blocks
+    Type: "Coordinate" //The location of the slipway wisp.
+    Gemini Decomposition //Duplicate so I don't have to fucking embed this twice
+    Identity Reflection
+    Subtractive Distillation
+    Length Purification
+    Numerical Reflection: 8
+    Minimus Distillation//True if distance is less than 8
+    
+    Numerical Reflection: 1 //Check link index 1 (0 is caster)
+    Phonebook Purification
+    Augur's Purification //True if anything other than 0 or null
+    Negation Purification //True if 0 or Null
+
+    Conjunction Distillation//True if both inputs are true, otherwise false
+    Consideration: 
+    {
+        Entity Purification: Wisp //Get wisp at coordinate
+        Link //Link if 0 or Null
+    }
+    Consideration: 
+    {
+        Bookkeeper's Gambit: v //Clear out coord if link not null
+    }
+    Augur's Exaltation
+    Hermes' Gambit    
+}
+
+//Caster's artifact:
+{
+    Numerical Reflection: 0
+    Scribe's Gambit
+    Send Iota
+}

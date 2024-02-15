@@ -1,0 +1,25 @@
+1: Raycast above block light place
+2: Bonemeal sapling/plant above ground
+3: Edify sapling
+4: Raycast above block strength 5 explode
+5: Raycast charge offhand
+6: Raycast dig block (doesn't dig blacklist in 39)
+7: Zone item recharge
+8: Raycast dig six faces (doesn't dig budding)
+9: Scan 10 and break (doesn't dig blacklist in 39)
+10: Dual function 6 blink stand or 3 impulse crouch
+11: Teleport home, teleport raycast entity if sneaking
+12: NULL
+13: Scan 10 and break vertical (tree cutting, doesn't dig budding)
+14: Fling levitate, str 2, 1 seconds
+15: Nether home portal teleport
+16: Raycast face of block create lava
+17: Wither 1 for [health]*2 seconds monsters within 30 blocks of caster
+18: Wisp debug info
+19: Pure daisy break/place
+20: Ancient city teleport
+21: 120 second 20 block flight (600 media!)
+22: Raycast dig block (doesn't dig blacklist in 39, 30 block mediafy check)
+23: Scan 10 and break (doesn't dig blacklist in 39, 30 block mediafy check)
+24: Gateself to bottom of glass dome
+25: Gateself to main chest area

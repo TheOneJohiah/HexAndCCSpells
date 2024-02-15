@@ -1,0 +1,42 @@
+//Feedwisp and handling
+//external input: amount, gate ref
+{
+    //This layer is inside the feedwisp itself
+    {
+        Consideration: Aergia's Gambit //Gate reference
+        Gemini Decomposition
+        Identity Reflection
+        Gate's Opening
+        Gate's Closing //Gate to the location
+
+        //Stuff to do for each wisp found at location
+        {
+            Gemini Decomposition //Duplicate entity ref
+            Link
+            Recognition Purification
+            {
+                Consideration: Aergia's Gambit //Selfref inserted during runtime
+                Consume Wisp
+            }
+            Numerical Reflection: 1
+            Identity Purification //Get selfref
+            Surgeon's Exaltation //Replace Aergia's with selfref
+            Send Iota //Send "Cons: selfref, Consume Wisp" to the presumed bankwisp
+        }
+        //Scan for wisps to link to and ask to be eaten by
+        Identity Reflection
+        Compass' Purification
+        Numerical Reflection: 5
+        Zone Distillation: Wisp
+        Numerical Reflection: 0
+        Excisor's Distillation //Remove wispself from the list
+        Thoth's Gambit //Whichever wisp gets to it first eats it
+    }
+    Numerical Reflection: 1
+    Rotation Gambit //Move the gate ref to top
+    Surgeon's Exaltation //Insert gate ref at noop
+    Identity Reflection
+    Compass' Purification //A location to summon the transferwisp at
+    Rotation Gambit //Move the amount to top
+    Summon Cyclic Wisp
+}

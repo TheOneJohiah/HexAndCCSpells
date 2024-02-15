@@ -1,0 +1,82 @@
+//Casts from item frames or link
+//Eats wandering wisps at end of life
+//Sends slipway transfer wisps
+// TODO: Implement time based list of wisps
+{
+    Gemini Decomposition //splat the big (wisp,time) list
+    Type: "Slipway Wisp"
+    Identity Reflection
+    Compass' Purification //Get location of wisp
+    Numerical Reflection: 8
+    Zone Exaltation: Type //Scan for slipway wisps
+    Prospector's Gambit
+    Gemini Decomposition //Splat the first wisp,time pair
+    {
+
+    }
+    Gemini Decomposition //Duplicate loop code
+    Hermes' Gambit
+    
+    //Add things in item frame to stack/execute
+    {
+        Auditor's Purification
+        {
+            Chronicler's Purification
+            Hermes' Gambit //Execute pattern from item frame
+        }
+        {
+            Aergia's Gambit //Since we clear after thoths, just noop here
+        }
+        Augur's Exaltation
+        Hermes' Gambit //Either read from item frame, or don't
+    }
+    Type: "Glowing Item Frame"
+    Identity Reflection
+    Compass' Purification //Get location of wisp
+    Numerical Reflection: 8
+    Zone Exaltation: Type //Scan for item frames?
+    Thoth's Gambit //Run Chroniclers and Hermes on all item frames
+    //If we were to get rid of this we could have persistent stack
+    //for item frame spells between iterations
+    Bookkeeper's Gambit: v //Clear thoth list
+
+    //Add things from link to stack/execute
+    Postmaster's Reflection
+    Augur's Purification //is the queue anything other than 0?
+    {
+        Identity Reflection
+        Compass' Purification
+        Summon Greater Sentinel //Put sentinel at wisp before casting
+
+        Recitation Reflection //Read out from queue
+        Hermes' Gambit //Execute whatever the caster sent, presumably a patternlist
+        Flock's Reflection //Get height of stack
+        Numerical Reflection: 1
+        Subtractive Distillation //Subtract bottom from stack; keep the wisplist!
+        Flock's Gambit //List anything in the stack together
+        Bookkeeper's Gambit: v //Clear out stack for next iteration
+    }
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+    
+    //Send media to bank wisp
+    //Only do if media greater than 3000
+    Numerical Reflection: 2000 //Amount to transfer
+    Gate: "Bank Location" //Place to transfer to
+    Media Reflection
+    Numerical Reflection: 3000
+    Maximus Distillation
+    Macro: "Feedwisp"
+    {
+        Bookkeeper's Gambit: vv //remove the gate ref and amount if not used
+    }
+    Augur's Exaltation
+    Hermes' Gambit //To transfer wisp or not
+
+    //Delay wisp 10 ticks to reduce load on wisp executions
+    Numerical Reflection: 10
+    Delay Wisp
+}

@@ -1,0 +1,31 @@
+//Reads from focus
+//Raycast block scan
+//Adds to list if Budding
+//Otherwise skips block
+
+//Remember to delete duplicates at the end!
+Consideration: 
+{
+    Scribe's Reflection
+    Mind's Reflection
+    Compass' Purification
+    Mind's Reflection
+    Alidade's Purification
+    Archer's Distillation
+    Gemini Decomposition
+    Sorter's Purification
+    Type: "Budding Amethyst"
+    Equality Distillation //True if Budding, False if not
+
+    Consideration: 
+    {
+        Integration Distillation
+        Scribe's Gambit
+    }
+    Consideration: 
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+}

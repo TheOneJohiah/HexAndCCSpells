@@ -1,0 +1,44 @@
+//requestWisp and handling
+//external input: return gate ref, amount, gate ref
+{
+    //This layer is inside the requestwisp itself
+    {
+        Consideration: Aergia's Gambit //Empty list to be filled with feedwisp stuff
+        Consideration: Aergia's Gambit //Gate reference
+        Gemini Decomposition
+        Identity Reflection
+        Gate's Opening
+        Gate's Closing //Gate to the location
+
+        //Stuff to do for each wisp found at location
+        {
+            Gemini Decomposition //Duplicate entity ref
+            Link
+            Recognition Purification
+            Huginn's Gambit //Write index to ravenmind to get it out of the way
+            Macro: "Feedwisp"
+            Integration Distillation //Add feedwisp pattern list to end of feedwisp param list
+            Muninn's Reflection //Read index back out
+            Send Iota //Send entire feedwisp param list to recieving wisp for execution
+        }
+        //Scan for wisps to link to and ask for media from
+        Identity Reflection
+        Compass' Purification
+        Numerical Reflection: 2
+        Zone Distillation: Wisp
+        Numerical Reflection: 0
+        Excisor's Distillation //Remove wispself from the list
+        Thoth's Gambit //Currently requests from every neighboring wisp
+    }
+    Numerical Reflection: 1
+    Rotation Gambit //Move the gate ref to top
+    Surgeon's Exaltation //Insert gate ref at noop
+    Rotation Gambit //Move the feedwisp param list to top
+    Numerical Reflection: 0
+    Surgeon's Exaltation //Insert feedwisp param list at noop
+
+    Identity Reflection
+    Compass' Purification //A location to summon the requestwisp at
+    Numerical Reflection: 10 //We only need 10 to feed this requestWisp
+    Summon Cyclic Wisp
+}

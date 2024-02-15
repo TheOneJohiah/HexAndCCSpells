@@ -1,0 +1,35 @@
+{
+    String: "Block"
+    String: "of"
+    String: "copper"
+
+    {
+        Flock's Reflection
+        Numerical Reflection: 2
+        Maximus Distillation
+        {
+            Flock's Reflection
+            Numerical Reflection: 1
+            Subtractive Distillation
+            Fisherman's Gambit //Pull bottom to top
+            Spacing Reflection
+            Concatenation Distillation //Add space to top string, I.E. "Block "
+
+            Flock's Reflection
+            Numerical Reflection: 1
+            Subtractive Distillation
+            Fisherman's Gambit //Pull bottom to top
+            Concatenation Distillation //Add next string, I.E. "Block of"
+            
+            Prospector's Gambit //Duplicate the loop
+            Hermes' Gambit
+        }
+        {
+            Bookkeeper's Gambit: v //Clear out the parent copy
+        }
+        Augur's Exaltation
+        Hermes' Gambit
+    }
+    Gemini Decomposition //Copy loop
+    Hermes' Gambit //Start loop
+}

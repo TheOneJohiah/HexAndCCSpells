@@ -1,0 +1,85 @@
+// Now only running every 14 seconds
+// Also, only spawns gummies with half of its income
+// TODO: Implement time based list of wisps
+{
+    Reservoir Reflection //Add current media to stack
+    Huginn's Gambit //Write to ravenmind
+
+    Consideration: 
+    {
+        Consume Wisp
+    }
+    Type: "Slipway Wisp"
+    Identity Reflection
+    Compass' Purification //Get location of wisp
+    Numerical Reflection: 10
+    Zone Exaltation: Type //Scan for slipway wisps
+    Thoth's Gambit //Use Consume list on all wisps in list
+    Bookkeeper's Gambit: v //Clear empty list
+
+    //Run item from code/kill switch?
+    Consideration: 
+    {
+        Chronicler's Purification
+        Hermes' Gambit //Execute all item frames
+    }
+    Type: "Item Frame"
+    Identity Reflection
+    Compass' Purification //Get location of wisp
+    Numerical Reflection: 10
+    Zone Exaltation: Type //Scan for item frames?
+    Thoth's Gambit //Run Chroniclers and Hermes on all item frames
+    Bookkeeper's Gambit: v //Clear empty list
+
+    Reservoir Reflection //Add current media to stack
+    Muninn's Reflection //Read in media from start of loop
+    //If positive, gummies, otherwise skip
+    Maximus Distillation
+
+    //Get quantity for gummies
+    Reservoir Reflection //Add current media to stack
+    Muninn's Reflection //Read in media from start of loop
+    Subtractive Distillation //Get difference
+    Numerical Reflection: 10
+    Division Distillation //Divide by 10; we only want to use 1/10 the income
+    Reservoir Reflection //Add current media to stack
+    Jester's Gambit
+    Subtractive Distillation //Get current amount, less quarter of gain
+    Huginn's Gambit //Write media goal to ravenmind
+    
+    Consideration: 
+    {
+        Reservoir Reflection //Get current media
+        Muninn's Reflection //Get media goal
+        Maximus Distillation //Compare current media to desired
+        
+        Consideration:
+        {
+            Identity Reflection
+            Compass' Purification //Get location of wisp
+            Conjure Tasty Treat
+            Gemini Decomposition //recopy the gummy code off the original
+            Hermes' Gambit //Run gummy code
+        }
+        Consideration:
+        {
+            Charon's Gambit //End loop if below buffer
+        }
+        Augur's Exaltation //Choose which of the two patterns to run
+        Hermes' Gambit //Run that pattern
+    }
+    Consideration: 
+    {
+        Bookkeeper's Gambit: v //simply remove the copied pattern list
+    }
+    Augur's Exaltation //Choose to gummy or not
+    Gemini Decomposition //Make a copy before running the first
+    Hermes' Gambit
+
+    Numerical Reflection: 280
+    Delay Wisp //Wait 14 seconds before running again
+
+    Flock's Reflection //Get height of stack
+    Flock's Gambit //List anything in the stack together
+    Bookkeeper's Gambit: v //Clear out stack for next iteration
+}

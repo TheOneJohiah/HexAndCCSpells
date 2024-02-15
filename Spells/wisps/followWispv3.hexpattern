@@ -1,0 +1,104 @@
+//Currently:
+//Constantly stays just behind caster;
+//No delay because it's noisy as hell
+//Will cast spells sent via link
+//Places light at caster's head if dark
+//TODO: Autorelink to caster, autobinding?
+//TODO: Mishap handling
+//TODO: Toggle light placement?
+//TODO: Verbal commands for axis offsets of wisp while casting
+//TODO: Only move sentinel if crouched?
+Consideration: 
+{
+    //Move to caster
+    Mind's Reflection
+    Compass' Purification II //get foot position
+    Vector Reflection +Y // Get 0,1,0 vector
+    Numerical Reflection: 2
+    Division Distillation //Make it a 0,0.5,0 vector
+    Additive Distillation //Add to get slightly below caster vision
+    Pathfinder's Gambit //Move there
+
+    //Cast light spell at caster head if dark
+    // TODO: Check for water/solid blocks when casting light spell
+    // TODO: Make not place in air/at night? Some other parameter?
+    // TODO: Alternative: Just make it toggleable via string?
+    Mind's Reflection
+    Compass' Purification
+    Lamplighter's Purification
+    Numerical Reflection: 6
+    Minimus Distillation //True if light less than 6
+
+    Mind's Reflection
+    Compass' Purification
+    Identity Reflection
+    Compass' Purification
+    Subtractive Distillation
+    Length Purification
+    Numerical Reflection: 7
+    Minimus Distillation //True if closer than 7 blocks
+    Conjunction Distillation //True if both are true, otherwise false
+    Consideration: 
+    {
+        Mind's Reflection
+        Compass' Purification
+        Conjure Light
+    }
+    Consideration: 
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+    
+    //Cast anything in queue
+    Postmaster's Reflection
+    Augur's Purification //is the queue anything other than 0?
+    Consideration: 
+    {
+        Mind's Reflection
+        Alidade's Purification
+        Numerical Reflection: 31
+        Multiplicative Distillation
+        Identity Reflection
+        Compass' Purification
+        Additive Distillation //Add wisp location with player look vector
+        //Only do if crouching?
+        Summon Greater Sentinel //Put sentinel at coord before casting
+
+        Recitation Reflection //Read out from queue
+        Hermes' Gambit //Execute whatever the caster sent, presumably a patternlist
+    }
+    Consideration: 
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+
+    //Ask for media from bankwisp
+    //Only do if media less than 4000
+    //TODO: Modify buffer quantity with string? Keep saved in ravenmind for editing?
+    {
+        Consideration: Gate: "JoGate"
+        Consideration: Numerical Reflection: 2000
+        Consideration: //end of list for integrating feedwisp pattern list
+    }
+    Gate: "Bank Location"
+    Media Reflection
+    Numerical Reflection: 4000
+    Minimus Distillation
+    Macro: "Requestwisp"
+    {
+        Bookkeeper's Gambit: vv //remove the gate ref and amount if not used
+    }
+    Augur's Exaltation
+    Hermes' Gambit //To transfer wisp or not
+}
+
+//Caster's artifact:
+{
+    Numerical Reflection: 0
+    Scribe's Gambit
+    Send Iota
+}

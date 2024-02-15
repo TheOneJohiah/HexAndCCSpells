@@ -1,0 +1,74 @@
+1: JohiahGate, 0 offset
+2: SlipGate adjacent
+3: Lava for thermalily
+4: Mark for joteleport
+5: Close jogate
+6: NULL
+7: NULL
+8: NULL
+9: Centerpoint of Dome 1
+10: Splicing table wisp?
+11: Raycast consume wisp test
+12: random testing stuff
+13: Motewisp handler code
+14: Mote string parse return
+15: String parsing 2
+16: String parsing 1
+17: Reveal stored motes
+18: Raycast mediafy
+19: Caster 30 item scan mediafy thoth's
+
+27: Bind wisp at link 0
+28: Set wisp speed to 2
+29: Link entity at link 0 with entity raycast	
+30: Link to wisp within 2 blocks and set speed to 1
+31: Follow casting wisp v2e
+32: Move to caster
+33: Cast light spell at caster head if dark
+34: Wisp apply hermes to iotas in link queue
+
+35: Make list of 10 coords facing away from caster, puts in Ravenmind
+36: Read from focus, raycast, add to focus
+37: Read from focus, raycast, add to focus (only budding)
+38: The full patternlist for compare item blacklist, mine or not pattern
+39: List of nonmineables
+40: Coordinates for wisp
+41: Glow item frame type
+42: Wandering Wisp type
+43: Gummy pattern list
+44: End of wisp ROM/cleanup section (8 seconds/160 delay)
+45: Consume wisp pattern list
+46: Run item frames section
+47: NULL
+48: Slipway wisp Focus casting, gummy producing, complete pattern list (14 seconds/280 delay)
+49: Consideration bookkeeper's V
+50: First two lines
+51: Middle reservoir stuff
+
+52: Flay Mind
+53: Dispel Rain, Summon Rain
+54: Flight
+55: Gate's Reflection
+56: Bind Wisp
+57: Blue Zenith
+58: Accelerate
+59: Consume Wisp
+60: Create Lava
+61: Craft Phial
+62: Greater Teleport
+63: Green Zenith
+64: Summon greater sentinel
+
+Todo: Consume wisp that uses age detection
+Todo: Grown amethyst breaker
+Todo: Thoth's amethyst breaker with a list of all budding
+Todo: Better explosion spell
+Todo: Variable cubedig
+Todo: Digger wisp
+Todo: Sort spellbooks for use/crafting
+Todo: General purpose cuboid volume wisp for digging/logging/lighting/whatever
+Todo: Explorationwisp: automatic light placement, mining, explosion/wither/impulse mobs?
+Todo: Wispbank concept
+Todo: Automediafy from followisp
+
+Todo: Add ignore wither skeletons to wither spell

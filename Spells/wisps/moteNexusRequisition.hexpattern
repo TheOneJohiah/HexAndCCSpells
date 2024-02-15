@@ -1,0 +1,116 @@
+//Loops on delay listening for caster string
+//if string starts with 'item,' begin
+//breaks input string at spaces. Example command: "$ item 64 cobble"
+//check type string against mote nexus itemtype list
+//return all matches as list to chat
+//loop waiting for numeric response from player to select index
+//return itemts of selected itemtype in specified quantity
+//TODO: Rewrite with new information on Delay functionality
+{
+    Whisper Reflection
+    Spacing Reflection
+    Separation Distillation //cut input at spaces
+    Flock's Disintegration
+    Flock's Reflection //get height of stack
+    Aergia's Gambit //NOOP
+    Aergia's Gambit //NOOP
+    Fisherman's Gambit //pull up last thing in stack
+    String: "item"
+    Equality Distillation //check if command is "item"
+    Flock's Reflection //get height of stack
+    Numerical Reflection: 3
+    Equality Distillation //check if height is currently 3(I.E. 64, cobble, True)
+    Conjunction Distillation //Only true if item is first arg and stack height is 3
+    {
+        Jester's Gambit //Swap quantity and type
+        Input Purification
+        Single's Purification
+        Huginn's Gambit //write quantity to ravenmind
+        {
+            Gemini Decomposition //Duplicate the item type
+            Scrivener's Purification
+            False Reflection //lowercase the item
+            Case Distillation //lowercase the item
+            Rotation Gambit //Pull up string from 3rd place
+            Discoverer's Distillation //compare item type against chat string
+            Augur's Purification //False if 0/Null, True otherwise
+            {
+                Bookkeeper's Gambit: v //Clear out the nonmatched itemtype
+            }
+            {
+                Aergia's Gambit //Because thoth's returns a list, we don't need to do anything
+                //the stuff on the stack is autolisted
+            }
+            Augur's Exaltation
+            Hermes' Gambit
+        }
+        Stocktake Reflection //Get the list of itemtypes from the nexus
+        Thoth's Gambit
+        Reveal //Show thoth list of matches in chat
+        {
+            Numerical Reflection: 20 //Delay wisp for 1 second
+            Delay Wisp
+            Whisper Reflection
+            Input Purification
+            Augur's Purification //True if number, False if null
+            {
+                Selection Distillation //Get itemtype chosen from thoth list
+                Stocktake Purification //Get list of matching motes
+                Numerical Reflection: 0 //Pick the first mote
+                Selection Distillation //Pick the first mote
+                Mind's Reflection
+                Compass' Purification //Get caster location
+                Muninn's Reflection //Read in quantity
+                Return Item //Spawn items at player
+                Bookkeeper's Gambit: v //Clear out original patternlist from stack
+            }
+            {
+                Numerical Reflection: 20 //Delay wisp for 1 second
+                Delay Wisp
+                Gemini Decomposition
+                Hermes' Gambit
+            }
+            Augur's Exaltation
+            Hermes' Gambit
+        }
+        Gemini Decomposition
+        Hermes' Gambit
+    }
+    {
+        Numerical Reflection: 20 //Delay wisp for 1 second
+        Delay Wisp
+        Flock's Reflection //Get height of stack
+        Flock's Gambit //List anything in the stack together
+        Bookkeeper's Gambit: v //Clear out stack for next iteration
+    }
+    Augur's Exaltation //either input, or wait a second and check again
+    Hermes' Gambit
+
+    //Ask for media from bankwisp
+    //Only do if media less than 4000
+    //TODO: Modify with string? Keep saved in ravenmind for editing?
+    Numerical Reflection: 2000
+    Gate: "Bank Location"
+    Media Reflection
+    Numerical Reflection: 4000
+    Minimus Distillation
+    Macro: "Requestwisp"
+    {
+        Bookkeeper's Gambit: vv //remove the gate ref and amount if not used
+    }
+    Augur's Exaltation
+    Hermes' Gambit //To transfer wisp or not
+
+    //Add things from link to stack/execute
+    Postmaster's Reflection
+    Augur's Purification //is the queue anything other than 0?
+    {
+        Recitation Reflection //Read out from queue
+        Hermes' Gambit
+    }
+    {
+        Aergia's Gambit
+    }
+    Augur's Exaltation
+    Hermes' Gambit
+}
