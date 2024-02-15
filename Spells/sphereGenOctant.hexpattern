@@ -1,5 +1,6 @@
 //better sphereGen using octant coordinates and mirroring
 {
+    Consideration
     @num(8) //8, duh
     Gemini Gambit
     Multiplicative Distillation
