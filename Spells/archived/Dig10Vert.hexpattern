@@ -1,0 +1,72 @@
+{
+    Mind's Reflection
+    Compass' Purification
+    Mind's Reflection
+    Alidade's Purification
+    Archer's Distillation //Raycast block
+    Single's Purification //Put coord in new list
+    Huginn's Gambit //Write coordlist to ravenmind
+    Vector Reflection +Y
+    Consideration: 
+    {
+        Muninn's Reflection //Read in coordlist
+        Abacus Purification //Get length of list
+        Numerical Reflection: 10
+        Minimus Distillation //True if length less than 10
+
+        Consideration: 
+        {
+            Prospector's Gambit //Duplicate offset vector
+            Prospector's Gambit //Duplicate main loop
+            Jester's Gambit //Put offset on top
+            Muninn's Reflection //Read in coordlist
+            Abacus Purification //Get length of list
+            Numerical Reflection: 1
+            Subtractive Distillation //Gets last list index; lists start from 0
+            Muninn's Reflection //Read in coordlist
+            Jester's Gambit
+            Selection Distillation //Get last coord
+            Additive Distillation //Add offset to coordinate
+            Muninn's Reflection //Read in coordlist
+            Jester's Gambit
+            Integration Distillation //Add to end of list
+            Huginn's Gambit //Write coordlist to ravenmind
+            Hermes' Gambit //Run loop again
+        }
+        Consideration: 
+        {
+            Bookkeeper's Gambit: vv //Clear out original pattern and offset
+        }
+        Augur's Exaltation //New block or end construction here?
+        Hermes' Gambit //Run that pattern
+    }
+    Gemini Decomposition
+    Hermes' Gambit
+
+    Consideration: 
+    {
+        Gemini Decomposition //Duplicate the coordinate
+        Sorter's Purification //Get block type at coord
+        List: "Nondig blocks"
+        Jester's Gambit
+        Single's Purification
+        Intersection Distillation
+        Abacus Purification //Get the length of the intersection
+        Numerical Reflection: 0
+        Equality Distillation //If no overlap, True, otherwise, False
+
+        Consideration: 
+        {
+            Break Block
+        }
+        Consideration: 
+        {
+            Bookkeeper's Gambit: v //Clear the unused block coord
+        }
+        Augur's Exaltation //Dig if true, skip if false
+        Hermes' Gambit
+    }
+    Muninn's Reflection //Read in the coordlist
+    Thoth's Gambit
+
+}

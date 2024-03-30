@@ -1,0 +1,78 @@
+00: Dig if not blacklist
+01: Place light if air
+10: Blink 5
+11: Impulse 2, levitate 2
+20: Bonemeal if not air
+21: Edify if not air
+30: Strength 4 safe tnt
+31: Monster zone smart safe tnt //todo
+40: Recharge trinket single (right click on amethyst on ground)
+41: Radius scan multi recharge (4 blocks, make sure only amethyst in range)
+
+50: Dig 5 if not blacklist //todo
+51: Dig 3x3x5 if not blacklist //todo
+60: Break/replace from hotbar using coordinates from item frame //todo
+61: Mark item frame via chat string //todo
+70: Add faceblock to list in offhand //todo
+71: Add block to list in offhand //todo
+80: Teleport self to place in chat
+81: Teleport other to place in chat
+
+Teletrinket:
+00: Self teleport home
+10: Self teleport stronghold
+
+Gatrinket:
+00: Mark self Johiah
+01: Mark other Johiah
+10: Mark self Nico
+11: Mark other Nico
+20: Mark self base
+21: Mark other base
+30: Close Jogate
+40: Close Nicgate
+50: Close homegate
+60: Recharge trinket single (right click on amethyst on ground)
+61: Radius scan multi recharge (4 blocks, make sure only amethyst in range)
+
+WispBook:
+1: Old slipway code
+2: Pull wisp list from ravenmind, duplicate
+3: Wandering Wisp scan r10
+4: Append to main list
+
+5: Inner thoth true
+8: Inner thoth true v2
+6: Inner thoth false
+7: Outer thoth
+
+10: Item frame scan thoth r8
+11: Delay wisp 9
+
+12: Combined main loop
+13: Initialize
+14: Test 1 (10 tick add, 9 tick wait, 300 consume, ~4.05/s)
+
+9: Athena's link cast
+15: Athena's item frame
+16: feedwispV1
+17: feedwispOuterLayer
+18: Slipway test 2 (11 tick add, 10 tick wait, 290 consume, ~4.01/s)
+
+31: vertical 10 dig
+32: Johiah -1 gate
+33: Nico -1 gate
+34: Old base gate
+35: Bankwisp -1 gate (DEAD)
+
+Todo: Wisp flower automation
+
+Todo: Grown amethyst breaker
+Todo: Thoth's amethyst breaker with a list of all budding
+Todo: Variable cubedig
+Todo: Digger wisp
+Todo: General purpose cuboid volume wisp for digging/logging/lighting/whatever
+Todo: Explorationwisp: automatic light placement, mining, explosion/wither/impulse mobs?
+Todo: Treefarm wisp?
+Todo: VSCode websocket CC interlink
+Todo: Add ignore wither skeletons to wither spell

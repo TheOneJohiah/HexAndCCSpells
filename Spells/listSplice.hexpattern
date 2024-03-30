@@ -1,0 +1,20 @@
+//For splicing one list into the middle of another list
+//list, list, int -> list
+// int is splice location upper bound exclusive
+{
+    Rotation Gambit
+    Jester's Gambit 
+    Prospector's Gambit
+    Prospector's Gambit //Get order as mainlist, num, mainlist, num
+    Prospector's Gambit
+    Abacus Purification
+    Selection Distillation //Get end portion
+    Rotation Gambit II //Send end portion down
+    Numerical Reflection: 0
+    Jester's Gambit
+    Selection Distillation //Get start portion
+    Rotation Gambit
+    Combination Distillation //Add middle to start
+    Jester's Gambit
+    Combination Distillation //Create finished list
+}

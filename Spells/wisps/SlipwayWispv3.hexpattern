@@ -1,82 +1,180 @@
 //Casts from item frames or link
 //Eats wandering wisps at end of life
 //Sends slipway transfer wisps
-// TODO: Implement time based list of wisps
+//10 tick add, 9 tick wait, 290 consume, ~3.95/s
+//11 tick add, 10 tick wait, 290 consume, ~4.01/s
+//11 tick add, 10 tick wait, 300 consume, ~1/s, wanderers despawn
+//10 tick add, 9 tick wait, 300 consume, ~4.05/s
 {
-    Gemini Decomposition //splat the big (wisp,time) list
-    Type: "Slipway Wisp"
-    Identity Reflection
-    Compass' Purification //Get location of wisp
-    Numerical Reflection: 8
-    Zone Exaltation: Type //Scan for slipway wisps
-    Prospector's Gambit
-    Gemini Decomposition //Splat the first wisp,time pair
+    Muninn's Reflection
+    Nullary Reflection
+    Inequality Distillation //If ravenmind not null, true
     {
+        //Start of wisp eating
+        Muninn's Reflection //read out wisp, time list
+        Numerical Reflection: 0
+        Selection Distillation //get wisp list
+        Gemini Decomposition
 
-    }
-    Gemini Decomposition //Duplicate loop code
-    Hermes' Gambit
-    
-    //Add things in item frame to stack/execute
-    {
-        Auditor's Purification
+        //Slipway eating
+        Type: "Slipway Wisp"
+        Identity Reflection
+        Compass' Purification //Get location of wisp
+        Numerical Reflection: 10
+        Zone Exaltation: Type //Scan for slipway wisps
+
+        Unifying Distillation //Add all new wisps
+        Gemini Decomposition
+        Abacus Purification //get the length of the new list
+        Rotation Gambit
+        Abacus Purification //get length of original list
+        Subtractive Distillation //get the difference
+        Muninn's Reflection
+        Numerical Reflection: 1
+        Selection Distillation //Get timer list before overwriting ravenmind
+        Jester's Gambit
+        Huginn's Gambit //write difference to ravenmind
+        Numerical Reflection: 0
+        Muninn's Reflection //read difference from ravenmind
+        Gemini Gambit //make 0 for each new number
+        Muninn's Reflection //get difference for 0 combine
+        Flock's Gambit //combine all 0s
+        Combination Distillation //Add 0s to timer list
+        Numerical Reflection: 2
+        Flock's Gambit //Recombine the two lists
+        Huginn's Gambit //Write to ravenmind
+
+        //Now iterate counters/consume if needed
         {
-            Chronicler's Purification
-            Hermes' Gambit //Execute pattern from item frame
+            Muninn's Reflection
+            Numerical Reflection: 0
+            Selection Distillation
+            Prospector's Gambit
+            Locator's Distillation //Get which timer
+            Muninn's Reflection
+            Numerical Reflection: 1
+            Selection Distillation //Get time list
+            Prospector's Gambit
+            Selection Distillation //Get specific timer
+            Numerical Reflection: 11
+            Additive Distillation
+            Gemini Decomposition
+            Numerical Reflection: 290
+            Maximus Distillation II
+            {
+                Rotation Gambit
+                Gemini Decomposition
+                Nullary Reflection
+                Inequality Distillation
+                {
+                    Consume Wisp
+                }
+                {
+                    Bookkeeper's Gambit: v
+                }
+                Augur's Exaltation
+                Hermes' Gambit //Either eat or clear null
+                Bookkeeper's Gambit: v
+                Muninn's Reflection
+                Numerical Reflection: 0
+                Selection Distillation
+                Prospector's Gambit
+                Excisor's Distillation //Remove this entry from the entity list
+                Jester's Gambit
+                Muninn's Reflection
+                Numerical Reflection: 1
+                Selection Distillation
+                Jester's Gambit //Pull up the index
+                Excisor's Distillation //Remove this entry from the time list
+                Numerical Reflection: 2
+                Flock's Gambit //Recombine wisp and time lists
+                Huginn's Gambit //Write list back to ravenmind
+            }
+            { //Write in new timer, put list back in ravenmind
+                Muninn's Reflection
+                Numerical Reflection: 1
+                Selection Distillation
+                Rotation Gambit II //Send down time list
+                Surgeon's Exaltation //Replace old time with new
+                Muninn's Reflection
+                Numerical Reflection: 1
+                Rotation Gambit //Pull up new list to insert
+                Surgeon's Exaltation //Insert new list
+                Huginn's Gambit //Write list back to ravenmind
+            }
+            Augur's Exaltation
+            Hermes' Gambit //Either eat and remove from list, or save to list
         }
+        Muninn's Reflection
+        Numerical Reflection: 0
+        Selection Distillation
+        Thoth's Gambit
+        Bookkeeper's Gambit: v //Clear thoth output
+        
+        //Add things in item frame to stack/execute
         {
-            Aergia's Gambit //Since we clear after thoths, just noop here
+            Gemini Decomposition //Copy before checking auditor's
+            Auditor's Purification
+            {
+                Chronicler's Purification
+                Hermes' Gambit //Execute pattern from item frame
+            }
+            {
+                Aergia's Gambit //Since we clear after thoths, just noop here
+            }
+            Augur's Exaltation
+            Hermes' Gambit //Either read from item frame, or don't
+        }
+        Type: "Item Frame"
+        Identity Reflection
+        Compass' Purification //Get location of wisp
+        Numerical Reflection: 8
+        Zone Exaltation: Type //Scan for item frames?
+        Thoth's Gambit //Run Chroniclers and Hermes on all item frames
+        //If we were to get rid of this we could have persistent stack
+        //for item frame spells between iterations
+        Bookkeeper's Gambit: v //Clear thoth list?
+        
+        //Send media to bank wisp
+        //Only do if media greater than 3000
+        Numerical Reflection: 2000 //Amount to transfer
+        Gate: "Bank Location" //Place to transfer to
+        Reservoir Reflection
+        Numerical Reflection: 3000
+        Maximus Distillation
+        Macro: "Feedwisp"
+        {
+            Bookkeeper's Gambit: vv //remove the gate ref and amount if not used
         }
         Augur's Exaltation
-        Hermes' Gambit //Either read from item frame, or don't
+        Hermes' Gambit //To transfer wisp or not
     }
-    Type: "Glowing Item Frame"
-    Identity Reflection
-    Compass' Purification //Get location of wisp
-    Numerical Reflection: 8
-    Zone Exaltation: Type //Scan for item frames?
-    Thoth's Gambit //Run Chroniclers and Hermes on all item frames
-    //If we were to get rid of this we could have persistent stack
-    //for item frame spells between iterations
-    Bookkeeper's Gambit: v //Clear thoth list
-
-    //Add things from link to stack/execute
-    Postmaster's Reflection
-    Augur's Purification //is the queue anything other than 0?
     {
+        //Initialize list if ravenmind empty
+        Type: "Slipway Wisp"
         Identity Reflection
-        Compass' Purification
-        Summon Greater Sentinel //Put sentinel at wisp before casting
+        Compass' Purification //Get location of wisp
+        Numerical Reflection: 10
+        Zone Exaltation: Type //Scan for slipway wisps
 
-        Recitation Reflection //Read out from queue
-        Hermes' Gambit //Execute whatever the caster sent, presumably a patternlist
-        Flock's Reflection //Get height of stack
-        Numerical Reflection: 1
-        Subtractive Distillation //Subtract bottom from stack; keep the wisplist!
-        Flock's Gambit //List anything in the stack together
-        Bookkeeper's Gambit: v //Clear out stack for next iteration
+        Gemini Decomposition
+        Abacus Purification //get the length of the new list
+        Huginn's Gambit //write length to ravenmind
+        Numerical Reflection: 300
+        Muninn's Reflection //read difference from ravenmind
+        Gemini Gambit //make 300 for each wisp
+        Muninn's Reflection //get length for combine
+        Flock's Gambit //combine all 300s
+        Combination Distillation //Add 0s to timer list
+        Numerical Reflection: 2
+        Flock's Gambit //Recombine the two lists
+        Huginn's Gambit //Write to ravenmind
     }
-    {
-        Aergia's Gambit
-    }
-    Augur's Exaltation
+    Augur's Exaltation //Main loop or list init
     Hermes' Gambit
-    
-    //Send media to bank wisp
-    //Only do if media greater than 3000
-    Numerical Reflection: 2000 //Amount to transfer
-    Gate: "Bank Location" //Place to transfer to
-    Media Reflection
-    Numerical Reflection: 3000
-    Maximus Distillation
-    Macro: "Feedwisp"
-    {
-        Bookkeeper's Gambit: vv //remove the gate ref and amount if not used
-    }
-    Augur's Exaltation
-    Hermes' Gambit //To transfer wisp or not
 
     //Delay wisp 10 ticks to reduce load on wisp executions
+    //and increase efficiency
     Numerical Reflection: 10
     Delay Wisp
 }

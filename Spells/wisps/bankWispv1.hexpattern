@@ -1,10 +1,10 @@
 //Casts from item frames or link
 //Eats slipway transfer wisps
 //Sends media transfer wisps on request
-//TODO: Verbal commands? Add via item frame?
 {
     //Add things in item frame to stack/execute
     {
+        Gemini Decomposition //Copy before checking auditor's
         Auditor's Purification
         {
             Chronicler's Purification
@@ -14,9 +14,20 @@
             Aergia's Gambit //Since we clear after thoths, just noop here
         }
         Augur's Exaltation
-        Hermes' Gambit //Either read from item frame, or don't
+        Athena's Gambit //Either read from item frame, or don't
+        {
+            Athena's Revelation
+            Flock's Reflection
+            Flock's Gambit
+            Bookkeeper's Gambit: v //Emergency clear the stack
+        }
+        {
+            Aergia's Gambit //If no error, do nothing
+        }
+        Augur's Exaltation
+        Hermes' Gambit //Deal with error output
     }
-    Type: "Glowing Item Frame"
+    Type: "Item Frame"
     Identity Reflection
     Compass' Purification //Get location of wisp
     Numerical Reflection: 8
@@ -31,11 +42,22 @@
     Augur's Purification //is the queue anything other than 0?
     {
         Recitation Reflection //Read out from queue
-        Hermes' Gambit
+        Athena's Gambit
+        {
+            Athena's Revelation
+            Flock's Reflection
+            Flock's Gambit
+            Bookkeeper's Gambit: v //Emergency clear the stack
+        }
+        {
+            Aergia's Gambit //If no error, do nothing
+        }
+        Augur's Exaltation
+        Hermes' Gambit //Deal with error output
     }
     {
         Aergia's Gambit
     }
     Augur's Exaltation
-    Hermes' Gambit
+    Hermes' Gambit    
 }

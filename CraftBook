@@ -59,10 +59,8 @@
 63: Green Zenith
 64: Summon greater sentinel
 
-Todo: Consume wisp that uses age detection
 Todo: Grown amethyst breaker
 Todo: Thoth's amethyst breaker with a list of all budding
-Todo: Better explosion spell
 Todo: Variable cubedig
 Todo: Digger wisp
 Todo: General purpose cuboid volume wisp for digging/logging/lighting/whatever
@@ -71,5 +69,4 @@ Todo: Wispbank concept
 Todo: Automediafy from followisp
 Todo: Treefarm wisp?
 Todo: VSCode websocket CC interlink
-
 Todo: Add ignore wither skeletons to wither spell
