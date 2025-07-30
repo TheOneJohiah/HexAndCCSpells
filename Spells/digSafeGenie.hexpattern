@@ -1,0 +1,26 @@
+//Intended for genies, digs very fastly
+{
+   Mind's Reflection
+   Compass' Purification
+   Mind's Reflection
+   Alidade's Purification
+   Archer's Distillation //Raycast block
+   Gemini Decomposition //Duplicate the coordinate
+   Detective's Purification //Get block type at coord
+   {
+      List: "Dig blocks"
+   }
+   Flock's Disintegration
+   Jester's Gambit
+   Single's Purification
+   Conjunction Distillation
+   Augur's Purification //Empty set is false, otherwise true
+   {
+      Break Block
+   }
+   {
+      Bookkeeper's Gambit: v
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+}

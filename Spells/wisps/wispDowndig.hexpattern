@@ -1,0 +1,90 @@
+{
+   {
+      Gemini Decomposition
+      Detective's Purification //get block type
+      {
+         List: "Air blocks"
+      }
+      Flock's Disintegration
+      Conjunction Distillation //check for intersection
+      Augur's Purification //true if air
+      {
+         Bookkeeper's Gambit: v
+      }
+      {
+         Break Block
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Identity Reflection
+   Vector Reflection -Y
+   Additive Distillation
+   Numerical Reflection: -6
+   Numerical Reflection: 0
+   Numerical Reflection: -6
+   Vector Exaltation //get start coord
+   Single's Purification //Make list
+   Huginn's Gambit //Put start coord on ravenmind
+   {
+      Muninn's Reflection //Read in coordlist
+      Length Purification //Get length of list
+      Numerical Reflection: 10
+      Minimus Distillation //True if length less than 10
+      {
+         Muninn's Reflection
+         Gemini Decomposition
+         Gemini Decomposition
+         Length Purification
+         Numerical Reflection: 1
+         Subtractive Distillation
+         Selection Distillation
+         Additive Distillation //Add vector offset to last coord
+         Integration Distillation
+         Huginn's Gambit
+         Hermes' Gambit
+      }
+      {
+
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Gemini Decomposition
+   Hermes' Gambit
+
+   Muninn's Reflection //read out completed list
+   Thoth's Gambit //iterate break check
+   {
+      Gemini Decomposition //Duplicate the entity ref
+      Sorter's Purification //Get the itemtype
+      Stocktake Purification //Get mote list like the itemtype
+      Gemini Decomposition //Duplicate the new list
+      Length Purification //Get the length of the list
+      Numerical Reflection: 0
+      Maximus Distillation //If list greater than 0, True, otherwise, False
+      {
+         Numerical Reflection: 0
+         Selection Distillation //Pull first mote type out of mote list
+         Mediafy Item //Add item to mote
+      }
+      {
+         Bookkeeper's Gambit: v
+         Mediafy Item
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Identity Reflection
+   Compass' Purification II
+   Numerical Reflection: 7
+   Zone Distillation: Item
+   Thoth's Gambit
+
+   Identity Reflection
+   Compass' Purification II
+   Vector Reflection -Y
+   Additive Distillation
+   Pathfinder's Gambit
+   Wander //Pause until moved one block down
+}

@@ -1,0 +1,81 @@
+//Detects if player is holding down the telepathy button
+//Digs one block per tick using a whitelist
+//While telepathy is active, mediafies all things within 31 blocks
+//    if items are already in mote nexus
+//TODO: Enable adding a block to whitelist automatically
+//TODO: Add ambit check to raycast blocks, soem blocks can be out of range
+{
+   Telepathic Reflection
+   Numerical Reflection: -1
+   Inequality Distillation //If telepathy is not -1, True
+   {
+      Mind's Reflection
+      Compass' Purification
+      Mind's Reflection
+      Alidade's Purification
+      Archer's Distillation //Raycast block
+      Gemini Decomposition //Duplicate the coordinate
+      Augur's Purification //If block is null, False
+      {
+         Gemini Decomposition //Duplicate again for internal behavior
+         Detective's Purification //Get block type at coord
+         {
+            List: "Dig blocks"
+         }
+         Flock's Disintegration
+         Jester's Gambit
+         Single's Purification
+         Conjunction Distillation
+         Augur's Purification //Empty set is false, otherwise true
+         {
+            Break Block
+         }
+         {
+            Bookkeeper's Gambit: v
+         }
+         Augur's Exaltation //If true, dig, else, don't
+         Hermes' Gambit
+      }
+      {
+         Bookkeeper's Gambit: v
+      }
+      Augur's Exaltation //If block not null, dig, else, don't
+      Hermes' Gambit
+
+
+      //Mass mediafication
+      {
+         Gemini Decomposition //Duplicate the entity ref
+         Sorter's Purification //Get the itemtype
+         Stocktake Purification //Get mote list like the itemtype
+         Gemini Decomposition //Duplicate the new list
+         Length Purification //Get the length of the list
+         Numerical Reflection: 0
+         Maximus Distillation //If list greater than 0, True, otherwise, False
+         {
+            Numerical Reflection: 0
+            Selection Distillation //Pull first mote type out of mote list
+            Mediafy Item //Add item to mote
+         }
+         {
+            Bookkeeper's Gambit: vv
+         }
+         Augur's Exaltation
+         Hermes' Gambit
+      }
+      Flock's Purification //get size of stack
+      Fisherman's Gambit //pull up the quine
+      Huginn's Gambit //write quine to ravenmind to take out of thoth to save stack size
+      Mind's Reflection
+      Compass' Purification
+      Numerical Reflection: 31
+      Zone Distillation: Item
+      Thoth's Gambit
+      Bookkeeper's Gambit: v
+      Muninn's Reflection //read quine back to stack
+   }
+   {
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+}

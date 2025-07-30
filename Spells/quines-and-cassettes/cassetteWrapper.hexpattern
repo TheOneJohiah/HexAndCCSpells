@@ -1,0 +1,37 @@
+//A list of internal spells for cassettes
+
+//wrapper for generation cast
+{
+   {
+      Gemini Decomposition //Duplicate entity ref
+      Auditor's Purification //Can we read out of it?
+      {
+         Auditor's Reflection
+         Flock's Disintegration //Add everything in the pattern to stack for combo
+      }
+      {
+         Bookkeeper's Gambit: v
+      }
+      Augur's Exaltation
+      Hermes' Gambit //Either add to spell or remove entity ref
+   }
+   Consideration: Type: "Item Frame"
+   Mind's Reflection
+   Compass' Purification
+   Numerical Reflection: 5
+   Zone Exaltation: Type //Make list of item frames
+   Thoth's Gambit //Assemble inner spell list from item frames
+   
+   Scribe's Reflection //Read out quine segment
+   Numerical Reflection: 1
+   Rotation Gambit //Pull spell to inject top
+   Surgeon's Exaltation //Replace placeholder with inner spell list
+   Numerical Reflection: 1
+   Prospector's Gambit //Copy {(spell) quine} list
+   Surgeon's Exaltation //Splice the quine back into itself
+   Hermes' Gambit //Execute the assembled quine
+}
+
+
+
+

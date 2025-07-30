@@ -1,0 +1,43 @@
+//Illumination at feet if dark and on ground
+//TODO: Fix trying to cast while outside of world
+{
+   Mind's Reflection
+   Compass' Purification II
+   Gemini Decomposition
+   Luminance Purification
+   Numerical Reflection: 5
+   Minimus Distillation
+   Prospector's Gambit //copy of foot coords
+   Detective's Purification //check block type
+   {
+      List: "Air blocks"
+   }
+   Flock's Disintegration
+   Gemini Decomposition //Duplicate air list
+   Rotation Gambit
+   Single's Purification
+   Conjunction Distillation //check for intersection
+   Augur's Purification //Empty set is false, otherwise true
+   Rotation Gambit //swap air list copy with light check
+   Conjunction Distillation //check for both true
+   Rotation Gambit II //push down the true
+   Prospector's Gambit //copy coord again
+   Vector Reflection -Y
+   Additive Distillation //Add -y to get block under feet
+   Detective's Purification
+   Single's Purification //make block under feet list
+   Conjunction Distillation //is not air?
+   Augur's Purification //false if not air
+   Negation Purification
+   Rotation Gambit //yank up earlier check
+   Conjunction Distillation //True if only air at feet and not below
+   {
+      Numerical Reflection: 15
+      Illuminate
+   }
+   {
+      Bookkeeper's Gambit: v
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+}

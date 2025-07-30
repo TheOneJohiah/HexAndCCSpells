@@ -1,0 +1,29 @@
+//Add every item within 10 blocks to the mote nexus
+//Combines with an already existing entry if possible
+{
+   {
+      Gemini Decomposition //Duplicate the entity ref
+      Sorter's Purification //Get the itemtype
+      Stocktake Purification //Get mote list like the itemtype
+      Gemini Decomposition //Duplicate the new list
+      Length Purification //Get the length of the list
+      Numerical Reflection: 0
+      Maximus Distillation //If list greater than 0, True, otherwise, False
+      {
+         Numerical Reflection: 0
+         Selection Distillation //Pull first mote type out of mote list
+         Mediafy Item //Add item to mote
+      }
+      {
+         Bookkeeper's Gambit: v
+         Mediafy Item
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Mind's Reflection
+   Compass' Purification
+   Numerical Reflection: 7
+   Zone Distillation: Item
+   Thoth's Gambit
+}

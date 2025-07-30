@@ -1,0 +1,51 @@
+//Feed from pocket if hungry and food in pocket
+//TODO: Change from using food value to just if more than 2 hunger bits
+//TODO: Change to assuming food is in end of hotbar,
+//       do a swap to pull it into wristpocket
+{
+   Wristpocket Reflection
+   Gemini Decomposition //Duplicate
+   Augur's Purification //Is not null?
+   {
+      Mind's Reflection
+      Hunger Purification //How full in 20ths
+      Jester's Gambit //Bring up food
+      Detective's Purification //Get the identifier
+      Gemini Decomposition //Make a copy
+      Edibility Purification //Can I eat it?
+      {
+         Calorie Purification //how much edible?
+         Additive Distillation
+         Numerical Reflection: 20
+         Minimus Distillation II //Is sum of full and food lesseq 20
+         Mind's Reflection
+         Vitality Purification
+         Mind's Reflection
+         Fitness Purification
+         Minimus Distillation //If not max health, true
+         Mind's Reflection
+         Stamina Purification //Get my saturation
+         Numerical Reflection: 1
+         Minimus Distillation //True if saturation less than one
+         Conjunction Distillation //True if no sat and hurt
+         Disjunction Distillation //True if (hungry) or (not full health and hurt)
+         {
+            Mage Mouth //Eat, papa
+         }
+         {
+         }
+         Augur's Exaltation
+         Hermes' Gambit
+      }
+      {
+         Bookkeeper's Gambit: vv
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   {
+      Bookkeeper's Gambit: v
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+}

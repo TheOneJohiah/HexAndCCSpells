@@ -1,0 +1,17 @@
+
+
+
+1: Blink 128
+2: Unconditional mediafy 10r
+3: new mine for lamp
+4: quine pulled from cassette
+5: str2 abs2 30s self
+6: le big water explosion
+7: Recharge aoe
+8: in progress media recharge
+9: edify raycast
+10: bonemeal raycast
+11: dispel rain
+12: raycast smelt
+13: motesperiments
+14: lightning

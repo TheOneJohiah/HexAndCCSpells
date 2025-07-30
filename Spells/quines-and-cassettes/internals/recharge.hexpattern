@@ -1,0 +1,23 @@
+//Checks offhand and onhand for media
+//Recharges with the largest media item stored in the mote nexus
+//If the item's spare capacity is a larger amount
+{
+   {
+      Gemini Decomposition
+      Potential Purification //get the amount it could hold
+      Prospector's Gambit 
+      Media Purification //get the amount it does hold
+      Subtractive Distillation //get the difference
+   }
+   Tool Purification
+   Accessory Purification
+   Numerical Reflection: 2
+   Flock's Gambit //combine into list
+   Thoth's Gambit
+
+
+   {
+      Type: "Amethyst Shard"
+   }
+   Flock's Disintegration
+}

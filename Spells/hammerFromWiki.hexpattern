@@ -1,0 +1,42 @@
+// sage hammer
+{
+    // get the block coordinate, and the face normal
+    Mind's Reflection
+    Compass' Purification
+    Mind's Reflection
+    Alidade's Purification
+    Dioscuri Gambit
+    Archer's Distillation
+    Rotation Gambit II
+    Architect's Distillation
+
+    {
+        {
+            // build the sudoku vector
+            Dioscuri Gambit
+            Additive Distillation
+            Tangent Purification
+            Sine Purification
+            Vector Exaltation
+
+            // cross the sudoku vector with the face normal
+            Division Distillation
+            // add the coordinate offset, and break the block
+            Additive Distillation
+            Break Block
+        }
+        // inner loop
+        Rotation Gambit
+        Thoth's Gambit
+    }
+    // build the iteration list
+    Numerical Reflection: -1
+    Numerical Reflection: 0
+    Numerical Reflection: 1
+    Numerical Reflection: 3
+    Flock's Gambit
+    // copy it for the inner loop
+    Undertaker's Gambit
+    // start the outer loop
+    Thoth's Gambit
+}

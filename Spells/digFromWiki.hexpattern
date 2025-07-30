@@ -1,0 +1,59 @@
+{
+   //thoth list
+   {
+      //get the direction to raycast in
+      Gemini Decomposition 
+      Vector Disintegration 
+      Rotation Gambit
+      Vector Exaltation
+      Prospector's Gambit 
+      Division Distillation 
+      Rotation Gambit II
+      //get the points to raycast from
+      Dioscuri Gambit 
+      Additive Distillation
+      Gemini Decomposition
+      Huginn's Gambit
+      Rotation Gambit II
+      Numerical Reflection: 9
+      Numerical Reflection: 10
+      Division Distillation
+      Multiplicative Distillation
+      Additive Distillation 
+      //arrange stack
+      Rotation Gambit II 
+      Jester's Gambit
+      Undertaker's Gambit 
+      //do the raycasts
+      Archer's Distillation
+      Rotation Gambit II
+      Archer's Distillation 
+      //make sure one raycast hit a block in its origin space, and the other did not
+      Gemini Decomposition
+      Muninn's Reflection
+      Equality Distillation
+      Rotation Gambit II 
+      Inequality Distillation
+      Conjunction Distillation
+      {
+         Break Block
+         Bookkeeper's Gambit: v
+      }
+      Flock's Disintegration
+      Augur's Exaltation
+      Muninn's Reflection
+      Jester's Gambit
+      Hermes' Gambit
+   }
+   //all the offsets to iterate over
+   Vector Reflection +X
+   Vector Reflection -X
+   Vector Reflection +Y
+   Vector Reflection -Y
+   Vector Reflection +Z
+   Vector Reflection -Z
+   Numerical Reflection: 6
+   Flock's Gambit
+   Thoth's Gambit
+   Bookkeeper's Gambit: vv
+}

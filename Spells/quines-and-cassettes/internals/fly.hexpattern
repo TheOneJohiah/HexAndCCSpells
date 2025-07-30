@@ -1,0 +1,50 @@
+//Checks for held spacebar
+//Nulls gravity
+//If w held while gravity nulled, impulse forward
+//Checks each tick
+//TODO: Fix fall damage?
+//TODO: Implement control for speed, sideways movement, and vertical dampening?
+{
+   Leaping Reflection
+   Numerical Reflection: 20
+   Maximus Distillation //If up has been held for >20 ticks
+   {
+      Mind's Reflection
+      Grasp Purification //1/20 seconds left of gravity
+      Numerical Reflection: 1
+      Maximus Distillation //Returns 0 if less than 1
+      {
+         Bookkeeper's Gambit: -
+      }
+      {
+         Mind's Reflection
+         Vector Reflection -Y
+         Numerical Reflection: 0
+         Gravitate
+      }
+      Augur's Exaltation //Casts if false
+      Hermes' Gambit
+
+      Charge Reflection
+      Numerical Reflection: -1
+      Inequality Distillation //If forward is not -1, True
+      {
+         Mind's Reflection
+         Mind's Reflection
+         Alidade's Purification
+         Numerical Reflection: 0.16
+         Multiplicative Distillation //Shrink look vector to 16%
+         Impulse
+      }
+      {
+         Bookkeeper's Gambit: -
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   } /* If up has been held for >20 ticks */
+   {
+      Bookkeeper's Gambit: -
+   } /* If up has not been held for >20 ticks */
+   Augur's Exaltation
+   Hermes' Gambit
+} /* End inner behavior loop */
