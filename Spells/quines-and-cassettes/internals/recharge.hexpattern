@@ -1,15 +1,29 @@
 //Checks offhand and onhand for media
 //Recharges with the largest media item stored in the mote nexus
 //If the item's spare capacity is a larger amount
+//TODO: Jams when 0.00 media, because that is null
+//TODO: Crashes on lamp because lamp uses different recharge pattern
 {
+   Huginn's Gambit //write quine to ravenmind
    {
       Gemini Decomposition
       Potential Purification //get the amount it could hold
-      Prospector's Gambit 
+      Jester's Gambit
       Media Purification //get the amount it does hold
-      Subtractive Distillation //get the difference
+      Gemini Decomposition
+      Augur's Purification
+      {
+         Subtractive Distillation //get the difference
+      }
+      {
+         Bookkeeper's Gambit: vv
+      }
+      Augur's Exaltation
+      Hermes' Gambit
    }
+   Mind's Reflection
    Tool Purification
+   Mind's Reflection
    Accessory Purification
    Numerical Reflection: 2
    Flock's Gambit //combine into list
@@ -17,7 +31,32 @@
 
 
    {
-      Type: "Amethyst Shard"
+      Numerical Reflection: 320
+      Maximus Distillation //need more media than stack of shards
+      {
+         {
+            Type: "Amethyst Shard"
+         }
+         Flock's Disintegration
+         Stocktake Purification
+         Numerical Reflection: 0
+         Selection Distillation
+         Mind's Reflection
+         Compass' Purification
+         Numerical Reflection: 64
+         Return Item
+         Mind's Reflection
+         Compass' Purification
+         Entity Purification
+         Reveal
+      }
+      {
+      }
+      Augur's Exaltation
+      Hermes' Gambit
    }
-   Flock's Disintegration
+   Jester's Gambit
+   Thoth's Gambit
+   Bookkeeper's Gambit: v
+   Muninn's Reflection //read quine from ravenmind
 }

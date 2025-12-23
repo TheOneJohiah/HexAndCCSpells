@@ -1,0 +1,57 @@
+//Boosts arrows shot by user
+//Random raycasts near cursor, mild aim assist
+{
+   Huginn's Gambit //write quine to ravenmind
+   {
+      Gemini Decomposition
+      Shooter Purification //get who shot the arrow
+      Gemini Decomposition
+      Augur's Purification //check for null
+      {
+         Mind's Reflection
+         Equality Distillation //is shooter me?
+         {
+            Gemini Decomposition
+            Pace Purification //entity and direction on stack
+            Gemini Decomposition //dup movement vector
+            Length Purification //get absolute value of movement
+            Gemini Decomposition
+            Numerical Reflection: 1
+            Maximus Distillation //is absolute speed more than 1
+            {
+               Division Distillation //turn into unit vector (mag 1)
+               Dioscuri Gambit //dup both
+               Impulse
+               Impulse //total cost, 3 dust, 2 impulse
+            }
+            {
+               Bookkeeper's Gambit: vv
+            }
+            Augur's Exaltation
+            Hermes' Gambit
+         }
+         {
+            Bookkeeper's Gambit: v
+         }
+         Augur's Exaltation
+         Hermes' Gambit
+      }
+      {
+         Bookkeeper's Gambit: vv
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Mind's Reflection
+   Compass' Purification
+   Numerical Reflection: 31
+   {
+      Type: "Arrow"
+   }
+   Flock's Disintegration
+   Rotation Gambit II //Push down the type because I am bad
+   Zone Exaltation: Type
+   Thoth's Gambit
+   Bookkeeper's Gambit: v
+   Muninn's Reflection //pull quine from ravenmind
+}

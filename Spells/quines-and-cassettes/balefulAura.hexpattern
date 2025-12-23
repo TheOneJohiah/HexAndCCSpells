@@ -1,0 +1,16 @@
+//Does not work due to the way wither applies at the end of its duration for the power
+{
+   Huginn's Gambit
+   {
+      Numerical Reflection: 0.05
+      Numerical Reflection: 1
+      Black Sun's Nadir //1 tick of strength 1 wither
+   }
+   Mind's Reflection
+   Compass' Purification
+   Numerical Reflection: 31
+   Zone Distillation: Monster
+   Thoth's Gambit
+   Bookkeeper's Gambit: v
+   Muninn's Reflection
+}

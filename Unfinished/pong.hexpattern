@@ -1,0 +1,85 @@
+//Generates bounding box centered on player eyes
+{
+   Vacant Reflection //Make an empty list
+   Numerical Reflection: 4 //0th index is x width/2
+   Integration Distillation
+   Numerical Reflection: 3 //1st index is y height/2
+   Integration Distillation
+   Numerical Reflection: 0.1 //2nd index is base ball side
+   Integration Distillation
+   Numerical Reflection: 0.1 //3rd index is paddle distance from edge
+   Integration Distillation
+   Numerical Reflection: 0.05 //4th index is paddle x width/2
+   Integration Distillation
+   Numerical Reflection: 0.2 //5th index is paddle y height/2
+   Integration Distillation
+   Numerical Reflection: 0.2 //6th index is ball move speed
+   Integration Distillation
+   Numerical Reflection: 0.1 //7th index is paddle move speed
+   Integration Distillation
+   Numerical Reflection: 3 //8th index is score size
+   Integration Distillation
+   
+   //Create box reference and save register
+   Mind's Reflection
+   Compass' Purification
+   Conjure Mesh //9th index is reference to bounding box
+   Integration Distillation
+   Huginn's Gambit //Save mesh reference to ravenmind
+
+   //Define the box outside the wisp as it only needs to be made once
+   Vector Reflection +X
+   Muninn's Reflection
+   Numerical Reflection: 0
+   Selection Distillation //Grab x width/2
+   Multiplicative Distillation
+   Vector Reflection +Y
+   Muninn's Reflection
+   Numerical Reflection: 1
+   Selection Distillation //Grab y height/2
+   Multiplicative Distillation
+   Additive Distillation //Creates 4,3,0 vector
+   Gemini Decomposition //Duplicate
+
+   Vector Reflection -Y
+   Muninn's Reflection
+   Numerical Reflection: 1
+   Selection Distillation
+   Numerical Reflection: 2
+   Multiplicative Distillation //Grab y height
+   Multiplicative Distillation
+   Additive Distillation //Creates 4,-3,0 vector
+   Gemini Decomposition //Duplicate
+
+   Vector Reflection -X
+   Muninn's Reflection
+   Numerical Reflection: 0
+   Selection Distillation
+   Numerical Reflection: 2
+   Multiplicative Distillation //Grab x width
+   Multiplicative Distillation
+   Additive Distillation //Creates -4,-3,0 vector
+   Gemini Decomposition //Duplicate
+
+   Vector Reflection +Y
+   Muninn's Reflection
+   Numerical Reflection: 1
+   Selection Distillation
+   Numerical Reflection: 2
+   Multiplicative Distillation //Grab y height
+   Multiplicative Distillation
+   Additive Distillation //Creates -4,3,0 vector
+   Numerical Reflection: 4
+   Flock's Gambit //Make list of four vectors
+   Gemini Decomposition //Duplicate list
+
+   Numerical Reflection: 0
+   Selection Distillation //Get the first vector
+   Integration Distillation //Add to end of list to complete box
+   Muninn's Reflection //Read out entity ref
+   Jester's Gambit //Place entity ref under to match
+   Weave Mesh //Draws the box
+
+   
+
+}

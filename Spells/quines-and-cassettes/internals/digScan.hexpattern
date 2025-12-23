@@ -1,0 +1,135 @@
+//Doesn't seem to work very well when used as a quine
+{
+   Mind's Reflection
+   Compass' Purification
+   Mind's Reflection
+   Alidade's Purification
+   Axial Purification
+   Additive Distillation
+   Gemini Decomposition //make copy for feet dig
+   Gemini Decomposition
+   Detective's Purification //get block type
+   Single's Purification //make list
+   {
+      List: "Air blocks"
+   }
+   Flock's Disintegration
+   Undertaker's Gambit //Copy under
+   Conjunction Distillation //intersection of sets
+   Augur's Purification //false if empty list, true otherwise
+   {
+      Jester's Gambit //swap aircoord down
+      Bookkeeper's Gambit: v //clear unused vector off stack
+   }
+   {
+      Jester's Gambit //swap aircoord down
+      Break Block //break if not air
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+   Jester's Gambit
+   Vector Reflection -Y
+   Additive Distillation
+   Gemini Decomposition
+   Detective's Purification
+   Single's Purification //make block type a list
+   Rotation Gambit
+   Conjunction Distillation
+   Augur's Purification
+   {
+      Bookkeeper's Gambit: v //clear unused vector off stack
+   }
+   {
+      Break Block //break if not air
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+   Mind's Reflection
+   Numerical Reflection: 1
+   Blink
+
+
+
+   //Mass mediafication
+   {
+      Gemini Decomposition //Duplicate the entity ref
+      Sorter's Purification //Get the itemtype
+      Stocktake Purification //Get mote list like the itemtype
+      Gemini Decomposition //Duplicate the new list
+      Length Purification //Get the length of the list
+      Numerical Reflection: 0
+      Maximus Distillation //If list greater than 0, True, otherwise, False
+      {
+         Numerical Reflection: 0
+         Selection Distillation //Pull first mote type out of mote list
+         Mediafy Item //Add item to mote
+      }
+      {
+         Bookkeeper's Gambit: vv
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Mind's Reflection
+   Compass' Purification
+   Numerical Reflection: 5
+   Zone Distillation: Item
+   Thoth's Gambit
+   Bookkeeper's Gambit: v
+
+
+   //Raycast scanning
+   Numerical Reflection: 16
+   Huginn's Gambit
+   Mind's Reflection
+   Alidade's Purification
+   Axial Purification //Get direction I am facing
+   Gemini Decomposition
+   Vector Disintegration
+   Rotation Gambit
+   Vector Exaltation
+   Undertaker's Gambit
+   Division Distillation //produces two vectors with 0 in the looking plane
+   {
+      Soroban Reflection
+      Multiplicative Distillation
+      Undertaker's Gambit //copy our circle part under first plane vec
+      Sine Purification
+      Multiplicative Distillation //Combine with vec
+      Rotation Gambit II //shove sin vec under
+      Cosine Purification
+      Multiplicative Distillation //Combine with vec
+      Additive Distillation //Add vectors together
+      {
+         Type: "Preservation Stone"
+      }
+      Flock's Disintegration
+      Mind's Reflection
+      Compass' Purification
+      Rotation Gambit II
+      Railgun Exaltation
+      Gemini Decomposition
+      Nullary Reflection
+      Equality Distillation
+      {
+         Bookkeeper's Gambit: v
+      }
+      {
+         Reveal
+         Bookkeeper's Gambit: v
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Numerical Reflection: 2
+   Arc's Reflection
+   Multiplicative Distillation
+   Muninn's Reflection
+   Division Distillation
+   Muninn's Reflection
+   Gemini Gambit
+   Muninn's Reflection
+   Flock's Gambit
+   Thoth's Gambit
+   Bookkeeper's Gambit: v
+}

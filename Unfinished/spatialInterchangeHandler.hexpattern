@@ -1,0 +1,64 @@
+{
+   {
+      Numerical Reflection: 0 //placeholder for list
+   }
+   Flock's Disintegration //remove from intro retro
+
+   Gemini Decomposition
+   Gemini Decomposition
+   Gemini Decomposition
+   Length Purification
+   Numerical Reflection: 1
+   Subtractive Distillation //get last list item
+   Selection Distillation //get last list item
+   Length Purification //one or two elements?
+   Numerical Reflection: 2
+   Modulus Distillation //even or odd
+   Augur's Purification //false if 0 true otherwise
+   {
+      Gemini Decomposition
+      Gemini Decomposition
+      Length Purification
+      Numerical Reflection: 1
+      Subtractive Distillation //get item at end of list
+      Selection Distillation //pull out last item
+      Mind's Reflection
+      Compass' Purification II
+      Integration Distillation //add to coord pair
+      Prospector's Gambit //pull up original list
+      Length Purification
+      Numerical Reflection: 1
+      Subtractive Distillation
+      Jester's Gambit
+      Surgeon's Exaltation //replace single coord with pair
+   }
+   {
+      Mind's Reflection
+      Compass' Purification II
+      Single's Purification
+      Integration Distillation //add start of new vector pair
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+   Gemini Decomposition
+   Length Purification
+   Numerical Reflection: 2
+   Maximus Distillation //is there more than two items
+   {
+      Bookkeeper's Gambit: v
+      Mind's Reflection
+      Compass' Purification II
+      Single's Purification
+      Single's Purification
+   }
+   {
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+
+   Scribe's Reflection //pull this back out of spellbook
+   Numerical Reflection: 1 //index to replace
+   Rotation Gambit //pull up new list
+   Surgeon's Exaltation
+   Scribe's Gambit
+}

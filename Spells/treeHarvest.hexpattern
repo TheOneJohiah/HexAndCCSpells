@@ -1,0 +1,37 @@
+//Removes blocks vertically up to ambit if they match the first block
+{
+   Mind's Reflection
+   Compass' Purification
+   Architect's Distillation //Get block you're looking at
+   Gemini Decomposition
+   Detective's Purification //Get block type
+   {
+      Prospector's Gambit //copy up the block coord
+      Vector Reflection +Y
+      Soroban Gambit
+      Multiplicative Distillation
+      Additive Distillation
+      Gemini Decomposition
+      Ambit Purification //true if in ambit
+      {
+         Prospector's Gambit //copy up the type of the first block
+         Prospector's Gambit //copy up the new coord
+         Detective's Purification
+         Equality Distillation
+         {
+            Break Block
+         }
+         {
+            Janus' Gambit
+         }
+         Augur's Exaltation
+         Hermes' Gambit
+      }
+      {
+         Janus' Gambit
+      }
+      Augur's Exaltation
+      Hermes' Gambit
+   }
+   Sisyphus' Gambit //cast the pattern list forever
+}

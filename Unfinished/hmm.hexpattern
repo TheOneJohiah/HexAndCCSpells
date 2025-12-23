@@ -1,0 +1,28 @@
+{
+    {
+        Muninn's Reflection //read offset vector from stack like 2,5,7 or -5,3,6
+        Vector Reflection +X
+        Multiplicative Distillation //get x component
+        Gemini Decomposition
+        Length Purification
+        Division Distillation //turn x component into a signed unit vector
+        Soroban Reflection
+        Multiplicative Distillation //scale by soroban, like -12,0,0
+        Additive Distillation //add to starting vector
+    }
+    Mind's Reflection
+    Compass' Purification
+    Muninn's Reflection //read offset vector from stack like 2,5,7 or -5,3,6
+    Vector Reflection +X
+    Multiplicative Distillation //get x component
+    Gemini Decomposition
+    Length Purification //get length in x
+    Gemini Gambit //make x copies of player head location
+    Muninn's Reflection //read offset vector from stack like 2,5,7 or -5,3,6
+    Vector Reflection +X
+    Multiplicative Distillation //get x component
+    Gemini Decomposition //combine x copies of player head coord into list
+    Length Purification //get length in x
+    Flock's Gambit
+    Thoth's Gambit
+}

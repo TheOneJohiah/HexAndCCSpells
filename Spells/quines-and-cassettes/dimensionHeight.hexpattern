@@ -1,0 +1,25 @@
+//For anything with a zone scan or world component
+{
+   Spatial Reflection
+   Atlas' Decomposition //returns lowest and highest points
+   Mind's Reflection
+   Compass' Purification
+   Vector Reflection +Y
+   Multiplicative Distillation //Get player height
+   Maximus Distillation //True if worldheight higher than player
+   Jester's Gambit
+   Mind's Reflection
+   Compass' Purification II
+   Vector Reflection +Y
+   Multiplicative Distillation
+   Minimus Distillation //True if worldheight lower than player
+   Conjunction Distillation //AND the trues
+   {
+
+   }
+   {
+
+   }
+   Augur's Exaltation
+   Hermes' Gambit
+}

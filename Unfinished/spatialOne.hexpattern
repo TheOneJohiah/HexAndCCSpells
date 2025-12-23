@@ -1,0 +1,35 @@
+//On stack before casting; one vec
+{
+   {
+      Imprint: "Noosphere",
+      Imprint: "Overworld"
+   }
+   Huginn's Gambit
+   Gemini Decomposition
+   Numerical Reflection: 2
+   Flock's Gambit //Make coordinate pair
+   Gemini Decomposition
+   Gemini Decomposition //3 of coord pair on stack
+   Muninn's Reflection
+   Numerical Reflection: 0
+   Selection Distillation //select noo
+   Spatial Interchange
+   Mind's Reflection
+   Muninn's Reflection
+   Numerical Reflection: 0
+   Selection Distillation //select noo
+   Noetic Gateway
+   {
+      Numerical Reflection: 0 //target [vec, vec] for return
+   }
+   Flock's Disintegration
+   Muninn's Reflection
+   Numerical Reflection: 1
+   Selection Distillation //select overworld
+   Spatial Interchange
+   Mind's Reflection
+   Muninn's Reflection
+   Numerical Reflection: 1
+   Selection Distillation //select overworld
+   Noetic Gateway
+}
